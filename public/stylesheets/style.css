@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+li {
+  list-style: none;
+}
+
+#funtionbar > li{
+  background-color: #677ca9;
+  border: 1px solid blue;
+
+}
+#functionbar > li:hover{
+  background-color: #5890ad;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="AuthenticationApp">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="javascripts/configapp.js"></script>
+
+</head>
+<body>
+<section ng-controller="MainpageController">
+    <header>
+        <h1>Hi <%= message %></h1>
+
+    </header>
+    <ul id="functionbar">
+        <li ng-click="viewprofile(b)">View your profile</li>
+        <li>Post status</li>
+    </ul>
+
+    <ul ng-repeat="ele in profile">
+        <li>Username: {{ele.username}}</li>
+        <li>Yourname: {{ele.displayname}}</li>
+        <img ng-src="{{ele.photos}}">
+    </ul>
+
+</section>
+<script>
+    var a = document.querySelector('h1').innerHTML;
+    var a = a.split(' ');
+    var b = a.pop();
+    console.log(b);
+</script>
+</body>
+</html>
